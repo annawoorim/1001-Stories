@@ -12,8 +12,9 @@
 
 	var IMAGE_HOME_BUTTON = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwIDUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzAxMDEwMTt9PC9zdHlsZT48cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjQ5LDI2LjUgMjQuOCwyLjcgMSwyNi41IDkuOSwyNi41IDkuOSw0Ny4zIDIwLjgsNDcuMyAyMC44LDMzLjkgMjkuMiwzMy45IDI5LjIsNDcuMyA0MC4xLDQ3LjMgNDAuMSwyNi41ICIvPjwvc3ZnPg";
 
-	var DRUPAL_URL =  "../data/stories.json";
+	//var DRUPAL_URL =  "../data/stories.json";
 	//var DRUPAL_URL = "https://1001stories.org/1001-Stories-Map/data/stories.json";
+	var DRUPAL_URL = "https://annawoorim.github.io/1001-Stories/data/stories.json";
 	var HILLSHADE_SERVICE_URL = "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/";
 	//var VECTOR_BASEMAP_ID = "fc3fec26b9ef44ae95674eed0a4a92ff";
 	//var VECTOR_BASEMAP_ID = "c31ed4252c0c438891547d2e2137e9f1";
