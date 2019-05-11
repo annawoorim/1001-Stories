@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+   <!--
+     | Version 10.1.1
+     | Copyright 2012 Esri
+     |
+     | Licensed under the Apache License, Version 2.0 (the "License");
+     | you may not use this file except in compliance with the License.
+     | You may obtain a copy of the License at
+     |
+     |    http://www.apache.org/licenses/LICENSE-2.0
+     |
+     | Unless required by applicable law or agreed to in writing, software
+     | distributed under the License is distributed on an "AS IS" BASIS,
+     | WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     | See the License for the specific language governing permissions and
+     | limitations under the License.
+    -->	
+
+	<meta charset="utf-8">
+
+	<title>1,001 Stories</title>
+
+	<meta name="author" content="1,001 Stories">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!--Facebook Open Graph-->
+	<meta property="og:title" content="1,001 Stories" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://1001stories.org/1001-Stories-Map/" />
+	<meta property="og:image" content="http://1001stories.org/1001-Stories-Map/resources/1001_stories_logo.png" />
+	<meta property="og:site_name" content="1,001 Stories" />
+	<meta property="og:description" content="1,001 Stories about water."/>
+	<!--End Facebook-->
+
+	<!--Twitter Card Data-->
+	<meta name="twitter:card" content="summary">
+	<!--Twitter Card Data-->	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link type="image/ico" rel="shortcut icon" href="resources/1001_stories_logo.png">
+	<link type="image/ico" rel="icon"  href="resources/1001_stories_logo.png">
+
+	<!--
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	-->
+
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Roboto:300,400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="lib/leaflet-extra-markers/css/leaflet.extra-markers.min.css" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  		crossorigin=""/>
+
+	<!--<link rel="stylesheet" href="https://unpkg.com/mapbox-gl@0.44.1/dist/mapbox-gl.css"/>-->
+	<link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css"/>
+
+	<link rel="stylesheet" href="//unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.css" />		
+	<link rel="stylesheet" href="css/main.css">	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+			crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+  			integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+  			crossorigin=""></script>
+
+	<!-- Load Esri Leaflet from CDN -->
+	
+	<!--<script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+    		integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+    		crossorigin=""></script>-->
+    <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"
+    		integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ=="
+    		crossorigin=""></script>
+
+	<!-- load the latest release from the cdn automatically -->
+	<script src="https://unpkg.com/mapbox-gl@0.53.1/dist/mapbox-gl.js"></script>
+	<script src="https://unpkg.com/esri-leaflet-vector@2.0.2/dist/esri-leaflet-vector.js"></script>
+
+	<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+
+	<script src="lib/leaflet-extra-markers/js/leaflet.extra-markers.min.js"></script>
+
+	<script src="//unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.js"></script>	
+
+	<script src="js/SocialButtonBar.js"></script>
+	<script src="js/PanoMatic.js"></script>
+	<script src="js/Table.js"></script>
+	<script src="js/DetailsContentDisplay.js"></script>
+	<script src="js/Record.js"></script>
+	<script src="js/Milestone.js"></script>
+	<script src="js/Details.js"></script>
+	<script src="js/Media.js"></script>
+	<script src="js/main.js"></script>
+
+	<!--Google Analytics Start-->
+	<script type="text/javascript">
+	  if (window.location.href.toLowerCase().indexOf("storymaps.esri.com") >= 0) {
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-26529417-1']);
+	      _gaq.push(['_trackPageview']);
+	    
+	      (function() {
+	         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();
+	  }
+	</script>
+	<!--Google Analytics End-->	
+
+    <!-- Adobe Analytics Start-->
+	<script src="//assets.adobedtm.com/2e9cd01e19dc5ac4867e752f17a2f1ea1923e5af/satelliteLib-0ed1001fd441a838aefe8e755be42aaafddcc46b.js"></script>		
+    <!-- Adobe Analytics End-->
+
+</head>
+
+<body>
+
+	<div class="banner">
+		<a id="logo" href="https://1001stories.github.io" target="_blank">
+			<img src="resources/1001_stories_logo.png">
+		</a>
+		<!--<h1 id="title">1,001 Stories</h1>-->
+		<!--<div class="social-button-bar"></div>-->
+	</div>    
+
+	<div id="main">
+	    <div id="list-container">
+	    	<div id="top-stuff">
+		    	<a id="button-show"></a>
+		    	<div id="filterWidgets">
+		    		<div> 
+			    		<label>Only list stories in current map</label>
+			    		<div id="cheat"></div>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+		    		<select id="sort">
+		    			<option value="0">Newest first</option>
+		    			<option value="1">Oldest first</option>
+		    		</select>
+		    	</div>	    	
+	    	</div>
+		    <ul id="list"></ul>
+		    <div id="details">
+		    	<div id="details-header">
+		    		<div>
+			    		<h3></h3>
+				    	<h5></h5>
+			   		</div>
+		    		<a id="arrow-left"><img/></a>
+		    		<a id="arrow-right"><img/></a>
+		    		<a class="x-button"><img/></a>
+		    	</div>
+		    	<div id="content"></div>
+		    </div>
+	    </div>
+	    <div id="map"></div>
+	</div>
+
+	<!-- Adobe Analytics Start -->
+	<script type="text/javascript" src="//go.pardot.com/dcjs/82202/1182/dc.js"></script>
+	<script type="text/javascript">_satellite.pageBottom();</script>	    
+    <!-- Adobe Analytics End-->
+    
+    <script type="text/javascript">
+		new SocialButtonBar();
+		$("div.banner a#title").attr("href", ".");
+    </script>
+    
+</body>
+
+</html>

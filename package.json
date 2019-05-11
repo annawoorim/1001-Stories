@@ -1,0 +1,19 @@
+{
+  "name": "eden-walk-milestones",
+  "version": "0.0.0",
+  "description": "application files for the eden walk milestones app client",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lee Bock",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-curl": "^2.4.1"
+  }
+}
